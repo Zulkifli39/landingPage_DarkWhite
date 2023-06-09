@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dark Whie </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="hero">
+        <nav>
+            <i class="fa-brands fa-kickstarter">ifli</i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PORTOFOLIO</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">HIRE ME</a></li>
+            </ul>
+            <img src="img/moon.png" id="icon">
+        </nav>
+
+        <div class="info">
+            <h1>I'm <span>Muh</span>Zulkifli</h1>
+            <p>This is My official portofolio website to showcase my all works <br>  related to
+            web development and ui design my all work</p>
+            <a href="">Download CV</a>
+        </div>
+
+        <div class="img-box">
+            <img src="img/OBJECTS.png" class="main-img">
+        </div>
+
+        <div class="social-links">
+            <a href=""><i class="fa-brands fa-linkedin-in"></i>></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></i></a>
+        </div>
+
+    </div>
+
+
+<script>
+    var icon = document.getElementById("icon");
+       icon.onclick = function () {
+       document.body.classList.toggle("dark-theme");
+       if (document.body.classList.contains("dark-theme")){
+            icon.src = "img/sun.png"
+       } else {
+            icon.src = "img/moon.png"
+       }
+}
+</script>
+
+
+
+</body>
+</html>
